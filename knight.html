@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knight Bite</title>
+    <link rel="stylesheet" href="./knight.css">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAB+CAMAAADV/VW6AAAAvVBMVEUAAAD///8GBgb/R3m+OWHLy8u6NFnW1taQkJDa2try8vI2NjY6OjoqKiqjZb7KffiVXLarq6t7e3tISEgfHx9vb2+ioqJcXFyYmJj/TYTj4+P5+fkWFhbAwMC5ubmzPGzkYrmpXrivWa1TU1OGhoaYV6yeVKWgUp6oS46tQ32wP3S2OGPOee/ddOLqX7D2U5T6T4vcasvwV6CzVaO3UZq+SokaEB2IVKKiTZSpR4WoMVQXCA/SdOS7TZC+RX4PT0X4AAAEU0lEQVRoge2baUPaMBiAU2ZWWqhbL0AK7gCdTt3cfe///6wlLeqkeQ9Gjn3w+YbFPDRt3ry5RHSfRuZFWQ0cUJVFLpstnbj3SdaVcEpVS1Avp27dHVNp1Ke1D7mmTvt66Uuukdv6iU+7EJP7+plfuxCzv/We710zudPTz31h3y9v9Cn51XUUraz7042ebnHzKDq2rq87PaPJTTi/cWdkq+fEutp+3av4p/Wxg4KZxErvLdb2qSPROO7jMKpGeI3120iRh9TnojD8deXrgRSi7P8xi0y/yQWlMN3o2EGIN1KJAfGNyZL6xh4MSH0e26oKQzm03hr1PKB+cGzq133py7kxrfCkH0bmrMaLftHl1YaO3Ye+6EYxY8Ml9/rFcWtPMtNF5/rVvLXH5l7Etb5K0RGca33e2sEs2bF+TIzgHOvbFjeEr7vVT7txXCh9ou2GnsaPfkiOnl3qR12jw8YRLvVduEOHz/vrR0kM0M1fNLefDbHHgj7i4qTDDazPwuo3bxiDtRO9WPLspthrpeGx/IZ7t9Xu5T/aLemHtN5ltlPQevM/2tGvSHvjUk+3faDXtaOvtpdoegC5ph39Yk7pgWRzR32V9Whf6ZjSAznHTvqhTPsFt9VKBh4g3dxBDzTu9qUi4z6Q8rD1GVi/+uqM0gMz0lz9IgFL1pfXlN44wOTrkaiuB85TSg8Uy9TXSMn6sVJxB8o3mXqsXbcjOEKf7KVH87l2TpoIe8u99GiHuqSqJ4JHOjw92qzbuEMkHOZkg6tHgxon7kAz5My7b1IEPVc7wfXQYhlPn41HMO2EGZ5uNYZFgx30NFhgUM0eCHrW9Hi6Bc4wcPTVeohSqCIytOGDK5UcPV6xm6pF9eBiHUdPDSLa2VpDInIHuFjH0JdkHqnfa7hDjpCpNYaeqvsul0AjE7gux6l8Mo3VpaP5DrhEz9GTIzjdoaD5Drj4z9GP4wRH67FHZFxJYOtZYOnWHAp69vQl0vLg/RHW9Bmih7cI8PQziaNfLaR9wHtuLKQbUdfykGEePKlsR6+jGhKa4d0APH1O6HP8O/CeH56emjzR7xYSnEZ76vH+rEsnkLgD7wRh6okRbIrWULq3nrj9RhVSglcTWMHVr/BOf3W7dGIA2ZjEjnpT1K9GuRUYd5CdfvygW2L5jG74YNxBlrJ2iflr8Ac0OrCAccfeKmZtyrmLrjvPxgDIxhuPG2ce9A/6/1b/+cvTLU4Up6enrxRfFWdnZ98U5+fnrxXPFBeag8dsvv+A9SdPtri8vPypuLq6etfxXPFG8V7zVnF9fX10dPSIzwWsP/SgP4D1g5PDHi8ULzUfFB8VvxSfFL8VN9V/wAd59t4ZGLeKeqMybZT1R2ncJuyNIvQm6cBbxANvkA98PCD04QjW0RAnTLkHY9wguceCnLA5FsQ4FOWEm0NRYar/9khY6ANxoY8Dhj4MGfooaOiDsFHgY8DtDwh5CFrj+Qj4H6xpVQS+6AZ9AAAAAElFTkSuQmCC">
+</head>
+<body>
+    <div id="header">
+        <img id="img1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAB+CAMAAADV/VW6AAAAvVBMVEUAAAD///8GBgb/R3m+OWHLy8u6NFnW1taQkJDa2try8vI2NjY6OjoqKiqjZb7KffiVXLarq6t7e3tISEgfHx9vb2+ioqJcXFyYmJj/TYTj4+P5+fkWFhbAwMC5ubmzPGzkYrmpXrivWa1TU1OGhoaYV6yeVKWgUp6oS46tQ32wP3S2OGPOee/ddOLqX7D2U5T6T4vcasvwV6CzVaO3UZq+SokaEB2IVKKiTZSpR4WoMVQXCA/SdOS7TZC+RX4PT0X4AAAEU0lEQVRoge2baUPaMBiAU2ZWWqhbL0AK7gCdTt3cfe///6wlLeqkeQ9Gjn3w+YbFPDRt3ry5RHSfRuZFWQ0cUJVFLpstnbj3SdaVcEpVS1Avp27dHVNp1Ke1D7mmTvt66Uuukdv6iU+7EJP7+plfuxCzv/We710zudPTz31h3y9v9Cn51XUUraz7042ebnHzKDq2rq87PaPJTTi/cWdkq+fEutp+3av4p/Wxg4KZxErvLdb2qSPROO7jMKpGeI3120iRh9TnojD8deXrgRSi7P8xi0y/yQWlMN3o2EGIN1KJAfGNyZL6xh4MSH0e26oKQzm03hr1PKB+cGzq133py7kxrfCkH0bmrMaLftHl1YaO3Ye+6EYxY8Ml9/rFcWtPMtNF5/rVvLXH5l7Etb5K0RGca33e2sEs2bF+TIzgHOvbFjeEr7vVT7txXCh9ou2GnsaPfkiOnl3qR12jw8YRLvVduEOHz/vrR0kM0M1fNLefDbHHgj7i4qTDDazPwuo3bxiDtRO9WPLspthrpeGx/IZ7t9Xu5T/aLemHtN5ltlPQevM/2tGvSHvjUk+3faDXtaOvtpdoegC5ph39Yk7pgWRzR32V9Whf6ZjSAznHTvqhTPsFt9VKBh4g3dxBDzTu9qUi4z6Q8rD1GVi/+uqM0gMz0lz9IgFL1pfXlN44wOTrkaiuB85TSg8Uy9TXSMn6sVJxB8o3mXqsXbcjOEKf7KVH87l2TpoIe8u99GiHuqSqJ4JHOjw92qzbuEMkHOZkg6tHgxon7kAz5My7b1IEPVc7wfXQYhlPn41HMO2EGZ5uNYZFgx30NFhgUM0eCHrW9Hi6Bc4wcPTVeohSqCIytOGDK5UcPV6xm6pF9eBiHUdPDSLa2VpDInIHuFjH0JdkHqnfa7hDjpCpNYaeqvsul0AjE7gux6l8Mo3VpaP5DrhEz9GTIzjdoaD5Drj4z9GP4wRH67FHZFxJYOtZYOnWHAp69vQl0vLg/RHW9Bmih7cI8PQziaNfLaR9wHtuLKQbUdfykGEePKlsR6+jGhKa4d0APH1O6HP8O/CeH56emjzR7xYSnEZ76vH+rEsnkLgD7wRh6okRbIrWULq3nrj9RhVSglcTWMHVr/BOf3W7dGIA2ZjEjnpT1K9GuRUYd5CdfvygW2L5jG74YNxBlrJ2iflr8Ac0OrCAccfeKmZtyrmLrjvPxgDIxhuPG2ce9A/6/1b/+cvTLU4Up6enrxRfFWdnZ98U5+fnrxXPFBeag8dsvv+A9SdPtri8vPypuLq6etfxXPFG8V7zVnF9fX10dPSIzwWsP/SgP4D1g5PDHi8ULzUfFB8VvxSfFL8VN9V/wAd59t4ZGLeKeqMybZT1R2ncJuyNIvQm6cBbxANvkA98PCD04QjW0RAnTLkHY9wguceCnLA5FsQ4FOWEm0NRYar/9khY6ANxoY8Dhj4MGfooaOiDsFHgY8DtDwh5CFrj+Qj4H6xpVQS+6AZ9AAAAAElFTkSuQmCC" alt="" height="60px">
+        <h2> KNIGHT BITE</h2>
+    <div id="nav">
+        <a class="a1" href="./knight.html">HOME</a>
+        <a class="a1" href="./About.html">ABOUT</a>
+        <a class="a1" href="./Menu.html">MENU</a>
+        <a class="a1" href="./Franchise.html">FRANCHISE</a>
+    </div>
+    </div>
+    <img id="img2" src="https://knight-bite.com/res/index/app-link-background.svg" alt="" height="800px" width="1500px">
+    <h1 id="h11">DELICIOUSNESS, ONE CLICK AWAY!</h1>
+    <BUTTon id="button1"><a href="" class="ven">Order On Web</a></BUTTon>
+    <h3>Or</h3>
+     <div id="logos">
+       <a href=""> <img id="img3" class="VENKY" src="https://knight-bite.com/res/index/ios-store.svg" alt="" height="80px"></a>
+      <a href="">  <img id="img3" class="VENKY" src="https://knight-bite.com/res/index/google-play-badge.svg" alt="" height="80px"></a>
+     </div>
+     <a href=""><img src="https://simtex.io/main/freshchat_logo.svg" alt="" id="mag"> z</a>
+    <div id="logos1">
+        <h4>Features</h4>
+    <span >
+        <img src="https://www.knight-bite.com/res/index/feature-1.svg" alt="" height="200px">
+        <img src="https://www.knight-bite.com/res/index/feature-2.svg" alt="" height="200px">
+        <img src="https://www.knight-bite.com/res/index/feature-3.svg" alt="" height="200px">
+        <img src="https://www.knight-bite.com/res/index/feature-4.svg" alt="" height="200px">
+        <img src="https://www.knight-bite.com/res/index/feature-5.svg" alt="" height="200px">
+    </span>
+</div>
+<div id="logos-content">
+        <P class="logos-content1">Late Night Delivery Till 4 Am</P>
+        <P class="logos-content1">Order On App Or Call 080-4710607</P>
+       <P class="logos-content1">Delivery Within 40 Mins</P>
+       <P class="logos-content1">Food For Every Kind Of Hunger</P>
+        <P class="logos-content1">Place Bulk Orders Through App</P>
+</div>
+<div id="banner-1">
+<img id="img4" src="https://knight-bite.com/res/index/banner-1.webp" alt="" height="900px" width="1520px">
+<h1 id="h12">ENJOY FOOD, ENJOY LIFE</h1>
+</div>
+<div id="banner-2">
+<img id="img5" src="https://knight-bite.com/res/index/banner-2.webp" alt="" height="800px" width="1510px">
+<h1 id="h13"> BURGER, FRIES, SHAKES <br>AND MANY MORE</h1><br><br><br>
+<button id="button2">See Full Menu</button>
+</div><br><br><br><br><br><br>
+<div id="footer">
+    <h4>Connect with us</h4>
+    <div id="contact">
+        <h5>Contact us</h5>
+        <img src="https://knight-bite.com/res/index/mail_icon.svg" alt="" height="25px">
+        <span>info@knight-bite.com</span><br><br>
+        <img src="https://knight-bite.com/res/index/phone_icon.svg" alt="" height="35px">
+        <span>+91 8047106107 Available from 7pm to 4am</span>
+    </div>
+    <div id="quicklinks">
+        <h5>Quick Links</h5>
+        <ul>
+            <li class="a"><a  href="">Delivery Policies</a></li><br>
+            <li class="a"><a  href="">Privacy Policies</a></li><br>
+            <li>Careers(Coming soon)</li><br>
+            <li class="a"><a href="">Franchise</a></li>
+        </ul>
+    </div>
+    <div id="para">
+        <p>Enter your email address below to be the first to know everything about <br><br>us, where we’ll be next, and how you can come along! <br><br>
+            Join us on our adventure.</p><br>
+            <input type="email" placeholder="Enter your email address">
+          <div id="img6"> <img  src="https://knight-bite.com/res/index/email-btn.svg" alt="" height="80px"></div> 
+
+    </div>
+    <div id="headoffice">
+        <h5>Head Office</h5>
+        <p>1st Floor, No 20-1-7/10, Regal Square Azizuddin Road, Bunder Mangalore, Bunder, Mangaluru, Dakshina Kannada, Karnataka, 575001</p>
+        </div>
+        <div id="locations">
+            <h5 class="h51">Locations</h5>
+        <ul>
+            <li>Bengaluru, Mangalore, Mysuru, Hyderabad, Hubli, Manipal, Udupi</li>
+        </ul>
+    </div>
+    <div id="followus">
+        <h5 class="h51">Follow Us</h5>
+        <a  href=""><img id="img7" src="https://www.knight-bite.com/res/instagram.svg" alt=""></a>
+        <a  href=""><img id="img7" src="https://www.knight-bite.com/res/facebook.svg" alt=""></a>
+        <a  href=""><img id="img7" src="https://www.seekpng.com/png/full/8-85452_twitter-bird-png.png" alt="" height="40px">
+        <a  href=""><img id="img7" src="https://www.knight-bite.com/res/linkedin.svg" alt="" ></a>
+        <a  href=""><img id="img7" src="https://www.knight-bite.com/res/youtube.svg" alt="" ></a>
+    </div>
+    <div id="brand">
+        <a href=""> <img src="https://www.knight-bite.com/res/index/brand_logo-1_footer.svg" alt=""></a>
+        <a href=""> <img id="img8" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAB+CAMAAADV/VW6AAAAvVBMVEUAAAD///8GBgb/R3m+OWHLy8u6NFnW1taQkJDa2try8vI2NjY6OjoqKiqjZb7KffiVXLarq6t7e3tISEgfHx9vb2+ioqJcXFyYmJj/TYTj4+P5+fkWFhbAwMC5ubmzPGzkYrmpXrivWa1TU1OGhoaYV6yeVKWgUp6oS46tQ32wP3S2OGPOee/ddOLqX7D2U5T6T4vcasvwV6CzVaO3UZq+SokaEB2IVKKiTZSpR4WoMVQXCA/SdOS7TZC+RX4PT0X4AAAEU0lEQVRoge2baUPaMBiAU2ZWWqhbL0AK7gCdTt3cfe///6wlLeqkeQ9Gjn3w+YbFPDRt3ry5RHSfRuZFWQ0cUJVFLpstnbj3SdaVcEpVS1Avp27dHVNp1Ke1D7mmTvt66Uuukdv6iU+7EJP7+plfuxCzv/We710zudPTz31h3y9v9Cn51XUUraz7042ebnHzKDq2rq87PaPJTTi/cWdkq+fEutp+3av4p/Wxg4KZxErvLdb2qSPROO7jMKpGeI3120iRh9TnojD8deXrgRSi7P8xi0y/yQWlMN3o2EGIN1KJAfGNyZL6xh4MSH0e26oKQzm03hr1PKB+cGzq133py7kxrfCkH0bmrMaLftHl1YaO3Ye+6EYxY8Ml9/rFcWtPMtNF5/rVvLXH5l7Etb5K0RGca33e2sEs2bF+TIzgHOvbFjeEr7vVT7txXCh9ou2GnsaPfkiOnl3qR12jw8YRLvVduEOHz/vrR0kM0M1fNLefDbHHgj7i4qTDDazPwuo3bxiDtRO9WPLspthrpeGx/IZ7t9Xu5T/aLemHtN5ltlPQevM/2tGvSHvjUk+3faDXtaOvtpdoegC5ph39Yk7pgWRzR32V9Whf6ZjSAznHTvqhTPsFt9VKBh4g3dxBDzTu9qUi4z6Q8rD1GVi/+uqM0gMz0lz9IgFL1pfXlN44wOTrkaiuB85TSg8Uy9TXSMn6sVJxB8o3mXqsXbcjOEKf7KVH87l2TpoIe8u99GiHuqSqJ4JHOjw92qzbuEMkHOZkg6tHgxon7kAz5My7b1IEPVc7wfXQYhlPn41HMO2EGZ5uNYZFgx30NFhgUM0eCHrW9Hi6Bc4wcPTVeohSqCIytOGDK5UcPV6xm6pF9eBiHUdPDSLa2VpDInIHuFjH0JdkHqnfa7hDjpCpNYaeqvsul0AjE7gux6l8Mo3VpaP5DrhEz9GTIzjdoaD5Drj4z9GP4wRH67FHZFxJYOtZYOnWHAp69vQl0vLg/RHW9Bmih7cI8PQziaNfLaR9wHtuLKQbUdfykGEePKlsR6+jGhKa4d0APH1O6HP8O/CeH56emjzR7xYSnEZ76vH+rEsnkLgD7wRh6okRbIrWULq3nrj9RhVSglcTWMHVr/BOf3W7dGIA2ZjEjnpT1K9GuRUYd5CdfvygW2L5jG74YNxBlrJ2iflr8Ac0OrCAccfeKmZtyrmLrjvPxgDIxhuPG2ce9A/6/1b/+cvTLU4Up6enrxRfFWdnZ98U5+fnrxXPFBeag8dsvv+A9SdPtri8vPypuLq6etfxXPFG8V7zVnF9fX10dPSIzwWsP/SgP4D1g5PDHi8ULzUfFB8VvxSfFL8VN9V/wAd59t4ZGLeKeqMybZT1R2ncJuyNIvQm6cBbxANvkA98PCD04QjW0RAnTLkHY9wguceCnLA5FsQ4FOWEm0NRYar/9khY6ANxoY8Dhj4MGfooaOiDsFHgY8DtDwh5CFrj+Qj4H6xpVQS+6AZ9AAAAAElFTkSuQmCC" alt="" height="40px"></a>
+    </div>
+    <div id="copyrights">Ⓒ Copyright 2023. Knight Bite Foods Pvt. Ltd. All Rights Reserved</div>
+
+
+</div>
+    
+</body>

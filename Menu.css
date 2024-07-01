@@ -1,0 +1,87 @@
+#mdiv{
+    position: absolute;
+    height: 140px;
+    width: 120px;
+    top:200px;
+    left: 340px;
+    color: white
+}
+.a1{
+   position: relative;
+   font-family: 'nicotineregular';
+   left: 30px;
+   color: white;
+}
+.mimg{
+    position: relative;
+    left:50px;
+}
+#mdiv1{
+    position: absolute;
+    height: 140px;
+    width: 120px;
+    top:200px;
+    left:650px;
+    color: white;
+}
+.a11{
+    position: relative;
+    font-family: 'nicotineregular';
+    color: white;
+}
+.mimg111{
+    position: relative;
+    left: 20px;
+    top:-40px;
+}
+#mdiv2{
+    position: absolute;
+    height: 140px;
+    width: 120px;
+    top:200px;
+    left:950px;
+    color: white;
+}
+.a12{
+   width: 200px;
+   color: white;
+}
+#mdiv3{
+    position: absolute;
+    height: 140px;
+    width:120px;
+    top:600px;
+    left:330px;
+    color: white;
+}
+#mdiv4{
+    position: absolute;
+    height: 140px;
+    width: 120px;
+    top:600px;
+    left:650px;
+    color: white;
+}
+#mdiv5{
+    position: absolute;
+    height: 140px;
+    width: 120px;
+    top:620px;
+    left:950px;
+    color: white;
+}
+.a111{
+    color: white;
+    position: relative;
+    top:-30px;
+}
+#copyrights1{
+    width:100%;
+    background-color: #FF5672;
+    color: white;
+    text-align: center;
+    height: 20px;
+    padding-top: 15px;
+    padding-bottom:15px;
+    margin-top:0px;
+}

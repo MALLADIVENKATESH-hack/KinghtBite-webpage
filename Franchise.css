@@ -1,0 +1,159 @@
+#div2{
+ position: absolute;
+ top: 250px;
+ left:400px;
+ font-size:70px;
+ color: white;
+font-family: "nicotineregular";
+}
+#div3{
+    display: inline;
+    position:absolute;
+    top:390px;
+    color: white;
+   font-family: "nicotineregular";
+   }
+   #hh{
+     margin-left:390px;
+     font-size:30px;
+   }
+.button{
+    background: #FF5672;
+    padding: 10px 20px;
+    width: 195px;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    border-radius: 40px;
+    position: relative;
+    top:-550px;
+    left:600px ;
+}
+.video{
+    border-radius: 50%;
+    height:30px;
+    position: relative;
+    top:-500px;
+    left: 600px;
+}
+#video{
+    color: white;
+    font-size:25px;
+    margin-left: 10px;
+    top: -505px;
+}
+#div5{
+    height:120px;
+    width: 100%;
+    top: -100px;
+    position: relative;
+    background: rgb(0 0 0 / 25%);
+    justify-content: center;
+    align-items: center;
+}
+#head{
+    position: relative;
+    font-weight: 700;
+    font-size: 34px;
+    width:500px;
+    margin-left: 500px;
+    text-align: center;
+}
+.para{
+    font-size:21px;
+    width: 500px;
+    margin-left: 500px;
+    text-align: center;
+}
+#hr{
+    width: 85vw;
+    height: 2.0px;
+    margin: 40px;
+    background: #c77bf4;
+}
+#head1{
+    margin-left:450px;
+    width: 600px;
+    color:rgba(0, 0, 0, 0.815);
+}
+#div9{
+    display: flex;
+    margin: 10px 20px;
+    justify-content: space-evenly;
+}
+#div15{
+    display: flex;
+    margin: 10px 70px;
+}
+#div10,#div11,#div13,#div14,#div16,#div17{
+    text-align: center;
+}
+#para1,#para2,#para3,#para4,#para5,#para6{
+    text-align: center;
+    padding-left: 20px;
+}
+#div18{
+    justify-content: center;
+    width: 500px;
+    margin-left:600px ;
+}
+#div19{
+    margin-top: 50px;
+    height: 520px;
+    width:1500px;
+    padding-left:250px;
+}
+.button1{
+    background: #FF5672;
+    padding: 10px 20px;
+    width: 195px;
+    color: white;
+    font-size: 19px;
+    border-radius: 30px;
+    position: relative;
+    top:180px;
+    margin-left:650px ;
+}
+#hr1{
+    width: 85vw;
+    height: 2.0px;
+    margin: 40px;
+    background: #c77bf4;
+   position: relative;
+   top:220px;
+}
+#div20{
+    position: relative;
+    bottom:-250px;
+    left: 600px;
+}
+#div21{
+    display: flex;
+    position: relative;
+    bottom:-250px;
+    left: 100px;
+    justify-content: space-evenly;
+}
+.footers{
+    position: relative;
+    color: #424242;
+    top:-10px;
+}
+#div24{
+    position: relative;
+    top:20px;
+}
+#div23{
+    position: relative;
+    top:30px;
+}
+#copyrights1{
+    width: 1500px;
+    background: linear-gradient(90deg, #C77BF4 0%, #FF5672 100%);
+    color: white;
+    text-align: center;
+    height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top:300px;
+}
